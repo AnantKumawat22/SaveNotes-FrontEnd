@@ -1,0 +1,45 @@
+i {
+    cursor: pointer;
+}
+
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+/* Navbar: Navbar */
+.navbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+/* NoteItem: -- */
+.note-item {
+    box-shadow: 0 3px 8px rgb(0 0 0 / 24%);
+}
+
+/* AddNote: -- */
+.inp-cls {
+    padding-left: 20px;
+    border-radius: 30px !important;
+}
+
+/* Signup: -- */
+.crd-bdy {
+    padding: 0px;
+}
+
+/* Responsive  */
+@media (max-width: 990px) {
+    .login-h2 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
