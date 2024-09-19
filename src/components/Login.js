@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Login = (props) => {
@@ -7,7 +8,7 @@ const Login = (props) => {
   if (collapse) collapse.classList.remove("show");
 
   // const host = `http://localhost:8000`;
-  const host = `https://infynotes.herokuapp.com`;
+  const host = `https://isavenotes.vercel.app/`;
   
   const [cred, setCred] = useState({ email: "", password: "" });
   let navigate = useNavigate();
@@ -68,7 +69,7 @@ const Login = (props) => {
                 </div>
 
                 <div className="d-flex justify-content-around align-items-center mb-4">
-                  <a href="#!">Forgot password?</a>
+                  <Link to="#!">Forgot password?</Link>
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-lg btn-block">Login</button>
@@ -77,13 +78,13 @@ const Login = (props) => {
                   <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
                 </div>
 
-                <a className="btn btn-primary btn-lg btn-block" style={{ backgroundColor: '#55acee' }} href="#!"
+                <Link className="btn btn-primary btn-lg btn-block" style={{ backgroundColor: '#55acee' }} to="#!"
                   role="button">
-                  <i className="fab fa-google me-2 mr-2"></i> Continue with Google</a>
-                <a className="btn btn-primary btn-lg btn-block" style={{ backgroundColor: '#3b5998' }} href="#!"
+                  <i className="fab fa-google me-2 mr-2"></i> Continue with Google</Link>
+                <Link className="btn btn-primary btn-lg btn-block" style={{ backgroundColor: '#3b5998' }} to="#!"
                   role="button">
                   <i className="fab fa-facebook-f me-2 mr-2"></i> Continue with Facebook
-                </a>
+                </Link>
               </form>
             </div>
           </div>

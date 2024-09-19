@@ -3,7 +3,7 @@ import NoteContext from './noteContext';
 
 const NoteState = (props) => {
     // const host = `http://localhost:8000`;
-    const host = `https://infynotes.herokuapp.com`;
+    const host = `https://isavenotes.vercel.app`;
 
     // Notes
     const notesInitial = [];

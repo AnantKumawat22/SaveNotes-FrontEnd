@@ -7,7 +7,7 @@ const Signup = (props) => {
   if (collapse) collapse.classList.remove("show");
 
   // const host = `http://localhost:8000`;
-  const host = `https://infynotes.herokuapp.com`;
+  const host = `https://isavenotes.vercel.app/`;
 
   // Enter Fields by user.
   const [cred, setCred] = useState({
