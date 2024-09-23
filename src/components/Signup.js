@@ -7,7 +7,7 @@ const Signup = (props) => {
   if (collapse) collapse.classList.remove("show");
 
   // const host = `http://localhost:8000`;
-  const host = `https://isavenotes.vercel.app/`;
+  const host = `https://savenotes-backend.onrender.com/`;
 
   // Enter Fields by user.
   const [cred, setCred] = useState({
