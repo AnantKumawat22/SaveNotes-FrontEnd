@@ -3,7 +3,7 @@ import NoteContext from './noteContext';
 
 const NoteState = (props) => {
     // const host = `http://localhost:8000`;
-    const host = `https://savenotes-backend.onrender.com/`;
+    const host = `https://savenotes-backend.onrender.com`;
 
     // Notes
     const notesInitial = [];

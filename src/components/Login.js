@@ -8,7 +8,7 @@ const Login = (props) => {
   if (collapse) collapse.classList.remove("show");
 
   // const host = `http://localhost:8000`;
-  const host = `https://savenotes-backend.onrender.com/`;
+  const host = `https://savenotes-backend.onrender.com`;
   
   const [cred, setCred] = useState({ email: "", password: "" });
   let navigate = useNavigate();
